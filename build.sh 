@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Create output directory if it doesn't exist
+mkdir -p out
+
+# Compile all Java files in src/
+javac -d out src/*.java
+
+# Run the main class
+echo "Launching Play & Learn with Emy Girl..."
+java -cp out Main
